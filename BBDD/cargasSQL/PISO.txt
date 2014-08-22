@@ -1,0 +1,17 @@
+\N	Rocamaura 17	L-Estartit	1	39098182-H	54.00	0.0
+\N	Rocamaura 17	L-Estartit	1	39098182-H	54.00	0.0
+\N	Paseo del Mar 2	L-Estartit	0	39098182-H	90.00	0.0
+\N	Av. Mediterraneo 1	L-Estartit	0	39098182-H	30.00	100.00
+\N	Paseo Dublin 77	L-Estartit	0	40021432-O	80.00	10.00
+\N	Urgell s/n	L-Estartit	1	40021432-O	40.00	20.00
+\N	Riera 18	L-Escala	0	41934623-F	30.00	15.00
+\N	Av. Girona 10	L-Escala	1	41934623-F	100.00	5.00
+\N	Urb. Montgo 8	L-Escala	1	32097253-Q	50.00	10.00
+\N	Urb. Montgo 10	L-Escala	1	32097253-Q	50.00	10.00
+\N	Urb. Montgo 12	L-Escala	1	32097253-Q	100.00	5.00
+\N	Av. Riells 17	L-Escala	0	20587354-T	20.00	15.00
+\N	Miro 6	L-Escala	0	20587354-T	25.00	15.00
+\N	Urb. Sa punta	Pals	0	20304912-W	150.00	5.00
+\N	Ctra. Platja s/n	Pals	0	20304912-W	50.00	20.00
+\N	Pl. Sant Joan 1	Pals	1	20304912-W	70.00	10.00
+\N	Rocamaura 17	L-Estartit	1	32097253-Q	54.00	0.0

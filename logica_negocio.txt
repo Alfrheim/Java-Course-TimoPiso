@@ -1,0 +1,55 @@
+Control transaccional:
+
+reservar piso:
+1) obtener todos los clientes (nif + nombre)
+	select a tabla cliente
+2) obtener pisos disponibles (entre intervalos fecha y localidad)
+	select a tabla pedido y piso
+	modificar metodo e interfaz
+	
+3) insertar registro en la tabla pedido
+4) calcular dias de alquiler y multiplicar por precio piso dia
+	select tabla piso
+5) insertar registro en la tabla caja 
+	tipo operacion A, 50% del total, fecha actual 
+
+pagar piso:
+1) obtener todos los clientes (nif + nombre)
+	select a tabla cliente
+2) obtener todos los pedidos del cliente seleccionado
+	select a tabla pedido, where pagado=false, cancelado=false
+	
+3) actualizar pedido pagado=true
+4) insertar registro en caja operacion=B
+
+cancelar piso:
+1) obtener todos los clientes (nif + nombre)
+	select a tabla cliente
+2) obtener todos los pedidos del cliente seleccionado
+	select a tabla pedido, where pagado=false, cancelado=false
+	mirar logica para calcular importe
+	
+3) actualizar tabla pedido cancelado=true
+4) insertar registro en caja segon la logica del importe y operacion=c
+
+pagar al propietario:
+1) obtener todos los propietarios (nif+nombre)
+	select tabla propietarios
+2) obtener pedidos pendientes de pago al propietario 
+	select tabla propietarios where operacion=b
+	
+3) calcular importe que hay pagar al propietario por pedido
+	en la lista de pedidos de ese propietario 
+	comprobar que el pagado=true (recoger la cifra operacion *2) y
+	ademas en en la lista caja el pagado=false (de ese pedido);
+	al total obtenido se resta la comision
+4) insertar registro en caja por cada pedido importe negativo y operacion=d
+5) obtener la suma de los pagos a este propietario
+
+cierre caja:
+1) obtener la suma de los registros del dia en la tabla caja (fecha inicio y fin para realizar mas consultas)
+2) insertar un registro en caja con el importe 
+	operacion=e
+
+	
+

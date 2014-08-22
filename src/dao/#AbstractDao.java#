@@ -1,0 +1,16 @@
+package dao;
+
+public abstract class AbstractDao {
+
+  protected static final Conexion con = new Conexion();
+
+  static {
+    con.setURL("jdbc:mysql://localhost:3306/inmobiliaria?user=usuario1"+
+               "&password=usuario1");
+  }
+
+  protected static int getLastID(){
+    //TODO implementar
+    return 1;
+  }
+}

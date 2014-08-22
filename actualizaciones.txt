@@ -1,0 +1,46 @@
+Anabel
+implementada getLastID(PreparedStatement pstm)
+Hay que pasarle un pstm que tiene un Statement.RETURN_GENERATED_KEYS como parametro...
+Mirar ejemplo
+stmt.executeUpdate("INSERT INTO usuarios (nombre) "+
+					"VALUES ('Daniel')", Statement.RETURN_GENERATED_KEYS);
+Otra opcion es en esta clase crear ya el preparedStatement... no se ya direis
+
+****************************************************************************
+*********** 18 Novembre 02.49 *********************************************
+DaoPagosImpl
+	* modificado java.sql.Date por java.util.Date, es mejor para trabajar con java
+
+DaoInmobiliaria
+	* Modificados los metodos que daban error
+
+DaoGestionImpl
+	* Arreglado numerosos errores de sintaxi SQL
+Piso, Propietario, Cliente
+	* Sobrescrito toString, falta sobreescribir equals, hash
+
+Cosas por hacer 
+**********************************************************************
+System.out.println creacion objetos grandes... para verificar que exista solo 1
+refresh ventanas para evitar reinsercion
+
+
+Mejoras
+***********************************************************************
+Metodo gestion llamadas a sql en abstradDao; nos devolveria un resultSet o un entero.
+Poner un campo a clientes y propietarios por si estan de alta o de baja.
+Comprobar que al cierre de caja se han realizado los cierre de caja anteriores.
+
+Ventanas Gui
+***********************************************************************
+* Mantenimiento
+Clientes
+Propietarios
+Pisos
+
+Reserva Piso //boton de añadir reserva, cancelar reserva y pagar reserva.
+
+Pagar propietario
+
+Cierre de caja -- > en el menu i en la ventana madre al cerrarla
+**Ventana Padre
